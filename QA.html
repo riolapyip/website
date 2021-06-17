@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QA</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-1 -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+	<body>
+	<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html"> 首頁 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="intro.html">特勤幹員</a>
+						<a class="nav-item nav-link active" href="QA.html">遊戲玩法</a>
+						<a class="nav-item nav-link" href="contactus.html">開發公司Ubisoft</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+<section id="Qasecond">
+<div clasas="container">
+    <div class="row">
+	    <div class="col-6 offset-1">
+		   <div class="accordion"id="accordionExample">
+         </div>
+    </div> 
+</div> 
+	<section id="QAfirst">
+	<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          多人遊戲
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        排名戰/休閒 (PvP)：適用傳統的團隊死斗規則。有4種對戰匹配列表：
+排名戰：玩家每回合擁有45秒的準備時間和180秒的行動時間。選人階段前有選禁階段，雙方共可禁用4名幹員。進攻方玩家可以個別選擇出生點，而防守方玩家則可以投票選出點位。每三回合攻守輪換。領先對手3分的隊伍，或者率先達到4分的隊伍勝利。若3-3平手，則進入延長賽，領先對手2分的隊伍，或者達到5分的隊伍勝利。炸彈模式從幻鏡行動起為所有排名戰對戰的標準玩法。50級以上的玩家方可參加。
+排名練習賽：基本規則同排名戰列表。10級以上的玩家方可參加。
+新進：專門為50級以下的新玩家熟悉遊戲規則的模式。進攻方可以投票選出出生點，防守方則自動分配點位。僅有炸彈模式
+快速對戰：玩家每回合擁有45秒的準備時間和180秒的行動時間。進攻方玩家可以個別選擇出生點，而防守方玩家則可以預先知道點位。兩回合後攻守輪換。領先對手2分的隊伍，或者率先達到3分的隊伍勝利。若2-2平手，則進入延長賽，一局定勝負。休閒模式下會有炸彈模式、人質模式、肅清威脅模式等玩法
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          炸彈模式
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        在傳統的團隊死斗規則外，炸彈模式中地圖上會出現兩個毒氣炸彈，攻擊方必須攻堅並安裝拆彈器並解除炸彈一次，防守方則要防止攻擊方安裝拆彈器或在炸彈被解除前破壞已經安裝的拆彈器。進攻方若施放拆彈器結束時間超出行動時間的話可以獲得延時，而防守方解除拆彈器遇到同樣情況則不會得到延時。排名戰當中，進攻方玩家可以在載入介面選擇拾起拆彈器，休閒模式當中則會將拆彈器隨機分配給一位進攻方玩家。行動時間內所有進攻方玩家都可以隨意丟下或拾起拆彈器。從復燃行動行動開始，排名戰安裝或破壞拆彈器所需的時間改為與電子競技模式相同的七秒，而休閒模式則為五秒
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          人質模式
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       在傳統的團隊死斗規則外，人質模式中攻擊方必須攻堅並護送人質離開建築物，防守方則要防止攻擊方救出人質。若任一方誤傷人質且時間內沒有救起人質則算自動落敗。護送人質的幹員只能使用副武器
+      </div>
+    </div>
+  </div>
+</div>
+		<div class="card">
+     <div class="card-header" id="heading4">
+       <h2 class="mb-0">
+         <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+           圖片
+         </button>
+       </h2>
+     </div>
+
+     <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+       <div class="card-body">
+           <img src="img/AAA.jpg" class="img-rounded">
+      </div>
+     </div>
+   </div>
+           
+	</section>
+	
+	
+	
+	
+</body>
+</html>
